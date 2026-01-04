@@ -1,0 +1,20 @@
+{
+  "node": {
+    "401bd5a91f1f13a759f06bd2507447df6bcef7ec5f": {
+      "workers": {
+        "app/signup/page": {
+          "moduleId": 53597,
+          "async": false,
+          "exportedName": "SignUpAction",
+          "filename": "Desktop/react and next js/personal-todo-list-app/my-app/actions/AuthActions.ts"
+        }
+      },
+      "layer": {
+        "app/signup/page": "action-browser"
+      },
+      "exportedName": "SignUpAction",
+      "filename": "Desktop/react and next js/personal-todo-list-app/my-app/actions/AuthActions.ts"
+    }
+  },
+  "edge": {}
+}
