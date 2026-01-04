@@ -2,34 +2,5 @@ node_modules
 # Keep environment variables out of version control
 .env
 
-/lib/generated/prisma
-
-/generated/prisma
-
-/prisma/lib/generated/prisma
-
-/../../../../../../lib/generated/prisma
-
-/../../../../../../lib
-
-/../../../../../../lib/prisma
-
-/prisma/lib
-
-/generated/prisma
-
-/prisma/.lib/generated/prisma
-
-/generated/prisma
-
-/generated/prisma
-
-/generated/prisma
-
-/generated/prisma
-
-/generated/prisma
-
-/generated/prisma
-
-/src/generated/prisma
+.next
+.gitignore
