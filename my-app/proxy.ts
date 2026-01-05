@@ -1,13 +1,10 @@
 import { auth } from "./lib/auth";
 import { NextRequest,NextResponse } from "next/server";
 import { Session } from "next-auth";
-interface AuthRequest extends NextRequest {
-    auth: Session | null;
+interface AuthRequest extends NextRequest{
+    auth: Session | null
 }
-
-// The default export must be the handler wrapped by auth().
-// We use the AuthRequest type to inform TypeScript that 'req' now has 'auth'.
-export default auth(async (req: AuthRequest) => { // 👈 AuthRequest resolves the TypeScript error
+export default auth((req:AuthRequest)=>{
     const url = req.nextUrl.pathname;
     const loggedIn = !!req?.auth;
 
@@ -21,4 +18,3 @@ export default auth(async (req: AuthRequest) => { // 👈 AuthRequest resolves t
     }
     return NextResponse.next();
 });
-
